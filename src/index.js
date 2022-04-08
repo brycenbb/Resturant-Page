@@ -2,6 +2,8 @@ import './style.css';
 import home from './home.js'
 import about from './about.js';
 import clear from './clear';
+import menu from './menu';
+import contact from './contact';
 
 
 //Initial page load, creates navBar
@@ -18,8 +20,14 @@ navButtons[1].addEventListener('click', function() {
     clear();
     about();
 });
-// navButtons[0].addEventListener('click',menu);
-// navButtons[0].addEventListener('click',contact);
+navButtons[2].addEventListener('click',function() {
+    clear();
+    menu();
+});
+navButtons[3].addEventListener('click',function() {
+    clear();
+    contact();
+});
 
 
 

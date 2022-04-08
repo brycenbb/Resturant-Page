@@ -11,6 +11,8 @@ let clear = () => {
         child = content.lastChild;
     }
 
+    content.removeAttribute('class');
+    console.log(content);
 }
 
 export default clear;
